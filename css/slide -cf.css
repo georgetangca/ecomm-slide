@@ -1,0 +1,837 @@
+body#ecomm_slideshow {
+    background:url('images/bg-tile.gif') !important;
+    border-top: 0 solid #FFFFFF;
+}
+
+body#ecomm_slideshow  .slide_default_page {
+    width: 1150px !important;
+    min-width: 1150px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+body#ecomm_slideshow  .slide_auto_page {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.left_side_width_800{
+    float:left;
+    width:100%;
+    max-width: 800px;
+}
+
+.left_side_auto{
+    float:left;
+    width:71.42%;
+    max-width: 800px;
+    padding-right:10px;
+}
+
+
+#e_comm_slider_leadingboard{
+  /*  background:url('images/leading-board.png') no-repeat center transparent; */
+    width:100%; 
+    height:90px; 
+    margin:0; 
+    padding:0 0 10px 0;
+    border: none;
+    text-align: center;
+    z-index: 9999; /* make close under it*/
+}
+
+#e_comm_slider_brand_header{
+  width:100%;
+  padding-top: 10px;
+}
+
+#loading{
+   background:url('images/loading.gif') no-repeat center center #fff;
+   max-width: 800px;
+   height: 565px;
+   display: none;
+   vertical-align: middle;    
+}
+
+
+#e_comm_slider_brand{
+    background:url('images/brand.png') no-repeat transparent; 
+    width:27.5%; 
+    height:80px; 
+    margin:0; padding:0;
+    border: none;
+    float: left;
+}
+
+#e_comm_slider_gift_guide{
+    background:url('images/gift-guide.png') no-repeat transparent; 
+    width:72.5%; 
+    height:80px; 
+    margin:0; padding:0;
+    border: none;
+    float: left;
+}
+
+
+
+body#ecomm_slideshow #slider_contents {
+    background:#fff;
+    float: left;
+    color: #333333;
+    display: inline-block;
+    font-family: "Helvetica Neue",arial,sans-serif;
+    margin: 0px 0px;
+    padding: 10px 10px;
+    width: 100%;    
+}
+
+div#ecomm_slider_thumbnail{
+   width:100%; 
+}
+
+#ecomm_slider_thumbnail ul li{
+   padding:0px;
+   width: 140px;
+   height: 140px;
+   float: left;
+   overflow: hidden;
+   display:block; 
+   margin:5px 0px 0 8px; 
+}
+
+#slider_contents .close {
+    background:url(images/close-main.png) no-repeat transparent;
+    position:relative;
+    float: right;
+    cursor:pointer;
+    height:27px;
+    width:27px;
+    padding-top: 2px;
+    z-index: 9000;
+   /* margin: -20px -18px; */
+}
+
+#slider_contents div.close a {
+  margin:0 0 0 -40px;
+  color: #333333;
+  font-family: 'Trebuchet MS',Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}    
+
+
+/* Define the css for the body */
+#slider_contents #slider_body {
+   width:100%;
+  /* height: 100%;*/
+   float: left;
+}
+
+.e_comm_slider_wrapper { margin:0px 0px; position:relative; }
+.e_comm_slider {overflow:hidden; position:relative; }
+.image_body{
+   position:relative; 
+ }
+ 
+.e_comm_slider img {
+    margin:0; 
+    padding:0; 
+    background-color: #fff;
+    max-height: 565px;
+}
+
+.e_comm_slider .panel {display:none; float:left; overflow:hidden; width:100%; }
+.e_comm_slider .panel-1 { display:block; }
+.pointer {cursor:pointer}
+.ps_hover { display:none; }
+.e_comm_slider:hover .ps_hover { display:block; }
+.e_comm_slider_sep { font-weight:normal; }
+
+.slider_selections span.current {color:#000;}
+
+
+/* THUMBNAIL SLIDER NAV - If enabled */
+.e_comm_slider_thumb_nav { 
+    position:relative;
+    /* background:url('images/slide.png');*/ 
+    overflow:hidden;
+    padding-top: 0px;
+}
+.e_comm_slider_thumb_nav .thumb_nav {padding:0; }
+
+span.ecomm_image_left_arrow { 
+    background: url("images/shade-arrow-previous.png") no-repeat scroll 0% 0px;
+    border: 0 none;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: left;
+}
+
+span.ecomm_image_right_arrow { 
+    background:url("images/shade-arrow-next.png") no-repeat scroll 100% 0px;
+    border: 0 none;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.image_shade_left{
+   background: none repeat scroll 0 0;
+   cursor: pointer;
+   height: 100%;
+   width: 25%;
+   min-width:50px; 
+   overflow: hidden;
+   position: absolute;
+   text-indent: -999em;
+   left: 0;
+   top:0;
+   z-index: 999;
+}
+
+a#image_a_left:hover{
+   display: block;
+   cursor: pointer;
+  /* display: none;*/
+   height: 100%;
+   width: 25%;
+   min-width:50px; 
+   overflow: hidden;
+   position: absolute;
+   text-indent: -999em;
+   left: 0;
+   top:0;
+   z-index: 999;
+}
+
+
+.image_shade_right{
+   background: none repeat scroll 0 0;
+   cursor: pointer;
+   height: 100%;
+   width: 25%;
+   min-width:50px; 
+   overflow: hidden;
+   position: absolute;
+   text-indent: -999em;
+   right: 0;
+   top: 0;
+   z-index: 999;
+}
+
+a#image_a_right:hover{
+   display: block;
+   cursor: pointer;
+   height: 100%;
+   width: 25%;
+   min-width:50px; 
+   overflow: hidden;
+   position: absolute;
+   text-indent: -999em;
+   right: 0;
+   top: 0;
+   z-index: 999;
+}
+
+#slider_body div li{
+   padding:0px;
+   width: 140px;
+   max-height: 140px;
+   height: 100%;
+   float: left;
+   overflow: hidden;
+   display:block; 
+   margin:0px 0px 0px 4.5px; 
+}
+
+
+div#ecomm_slider_thumbnail ul.thumbnail_area  li:before{
+    content: none;
+}
+
+div#ecomm_slider_thumbnail ul.thumbnail_area li a img {
+   border: none;
+}
+
+
+#slider_body ul li:before {
+    content:none;
+}
+
+#slider_body ul li img {
+    border: none;
+}
+
+div.e_comm_slider_thumb_nav .slider_selections ul {
+    
+}
+div.e_comm_slider_thumb_nav .slider_selections ul li {
+   width:17.5%;
+}
+
+.e_comm_slider_thumb_nav .slider_selections div li.current_sj {
+   border:2px solid #D54E21;
+   height: 136px !important;
+}
+
+.e_comm_slider_thumb_nav img { 
+    width:100%; 
+}
+
+/* TITLE DISPLAY - If enabled */
+.e_comm_slider_title {
+	display:block;
+	position:absolute;
+	top:0px; left:0px;
+	width:95%;
+	padding:2.5%;
+	text-align:left;
+	font-size:1.5em;
+	font-weight:bold;
+	color:#000;
+}
+.fancy_ps_title {
+	background-image:url('images/title.png');
+	background-repeat:no-repeat;
+	background-position:right;
+	width:auto;
+	height:77px; 
+	padding:0 40px 0 10px;
+	font-size:18px;
+	text-align:center;
+	line-height:77px;
+}
+.e_comm_slider_title a {color:#000; text-decoration:none;}
+.e_comm_slider_title a:hover {text-decoration:underline;}
+
+/* EXCERPT DISPLAY - If enabled */
+.e_comm_slider_bottom_bar {
+	display:none;
+	/* position:absolute; */
+        position:relative;
+        
+	/* bottom:0; left:0;*/
+        filter:alpha(opacity=100);
+	opacity:1;
+	color:#000;
+        margin: 10px 0;
+        width:100%;
+        float: left;
+}
+
+.e_comm_slider_bottom_bar .bottom_desc{
+    float:left;
+    width:70%;
+}
+
+.e_comm_slider_bottom_bar .bottom_buynow{
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+
+.e_comm_slider_background_image{
+  max-height: 565px;
+ /* height:100%;*/
+}
+
+.e_comm_slider_excerpt p {margin:0; padding:0;}
+
+
+#slider_contents #e_comm_slider_header{
+    display: block;
+    line-height: 20px;
+    padding: 5px 0px;
+    width: 100%;
+    position: relative;
+    background-color: #A6C143;
+    color: #333;
+    font-family: 'Trebuchet MS',Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#slider_contents #e_comm_slider_header span.header_element{
+   /* margin: 0 0 0 5px;*/
+    width: 100px;
+    cursor: pointer;
+    color: #fff;
+   /* border-right: 2px solid #fff;*/
+   /* padding-right: 5px;*/
+}
+
+#slider_contents #e_comm_slider_header span:hover
+{
+    color: #333333;
+    text-decoration: none;
+}
+
+#slider_contents #e_comm_slider_header span.cat_current{
+    color: #333333;
+    text-decoration: none;
+}
+
+#slider_contents #e_comm_slider_header span.tag_current{
+    color: #333333;
+    text-decoration: none;
+}
+
+.header_show_post_number{
+   width:100%; 
+   height: 45px;
+   text-align: center; 
+   color: #333333;
+   display: block;
+   margin: 30px 0 0 0;
+}
+
+.header_show_post_number .number_area{
+    color: #333333;
+    font-family: 'Trebuchet MS',Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+span.ecomm_left_arrow { 
+    background: url("images/prev-horizontal.png") no-repeat scroll center center transparent;
+    border: 0 none;
+    cursor: pointer;
+    padding: 23.5px;
+    vertical-align: middle;  
+}
+span.ecomm_right_arrow { 
+    background: url("images/next-horizontal.png") no-repeat scroll center center transparent;
+    border: 0 none;
+    cursor: pointer;
+    padding: 23.5px;
+    vertical-align: middle;
+}
+
+/*a.ecomm_thumb_left_arrow{*/
+a.left{
+  float: left;
+  left: 0px;
+  height: 140px;
+  width: 4.375%;
+  max-width: 35px;
+  background:url("images/bottom-back.png") no-repeat scroll center center transparent;   
+  vertical-align: middle; 
+ /* margin-top: 5px;*/ 
+}
+
+/*a.ecomm_thumb_right_arrow{*/
+a.right{
+  float:right;
+  right:0px;
+  height: 140px;
+  width: 4.375%;
+  max-width: 35px;
+  background:url("images/bottom-next.png") no-repeat scroll center center transparent;
+  vertical-align: middle;
+ /* margin-top: 5px;*/  
+}
+
+.bottom_arrow{
+   display: none;
+}
+
+/* Css fir sidebar */
+#slider_contents #slider_sidebar {
+  /* background:url('images/sidebar.png') !important;*/
+   width: 25.5%;
+   max-width:290px;
+   height:100%;
+   float: left;
+   margin: 0px 0px;
+   
+}
+
+.sidebar_item .slide-info {
+    font-family: "Helvetica Neue",arial,sans-serif;
+    padding: 22px 10px 10px;
+}
+
+.sidebar_item .slide-info span.title {
+    clear: both;
+    color: #333333;
+    display: block;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 12px !important;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.bottom_desc  span.description,.sidebar_item .slide-info span.description {
+    display: block;    
+    color: #333333;
+    font-family: 'Trebuchet MS',Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.sidebar_item .product_desc{
+  /* height: 350px;?*/
+   overflow: auto;
+/*   border-top: #D54E21 2px solid;
+   border-bottom: #D54E21 2px solid;
+*/   
+   padding-top: 10px;
+}
+
+.sidebar_item .product_desc .sidebar_buynow{
+  text-align: center;
+}
+
+div.slide-info span.description a{
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS',Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #D2152F;
+}
+
+.bottom_buynow a img, .sidebar_buynow a img{
+  width:142px;
+  height: 142px;
+  border: none;
+}
+
+
+
+.sidebar_item .social-media {
+/*  
+   border-top: 1px solid #DDDDDD;
+   border-bottom: #D54E21 2px solid;
+ 
+*/  
+    padding: 10px 0 10px 70px;
+    text-align: left;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.sidebar_item .social-media br {
+   display: block;
+   margin: 2px 0;
+}
+
+.sidebar_item .social-media a {
+  width: 50px;
+  padding-right: 42px;
+}
+
+#e_comm_slider_sidebar_wrapper  .ecom-box-ad{
+    height: 250px;
+    margin: 10px 0 8px;
+    background-color: #DDDDDD;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+#e_comm_slider_sidebar_wrapper #sidebar_adv_top{
+   margin: 30px 0 0;
+}
+
+#e_comm_slider_sidebar_wrapper #sidebar_adv_bottom{
+   margin: -10px 0 0;
+}
+
+/* sidebar end */
+
+/*
+root element for the scrollable.  when scrolling occurs this
+element stays still.
+*/
+.scrollable {
+  /* required settings */
+  position:relative;
+  overflow:hidden;
+  max-width: 730px;
+  width: 91.25%;
+  height:145px;
+ /* margin: 5px 10px;*/
+  float: left;
+}
+ 
+/*
+root element for scrollable items. Must be absolutely positioned
+and it should have a extremely large width to accommodate scrollable
+items.  it's enough that you set width and height for the root element
+and not for this element.
+*/
+.scrollable .items {
+  /* this cannot be too large */
+  width:20000em;
+  position:absolute;
+  height: 100%;
+}
+.scrollable_div{
+  width:730px;
+  height:100%;
+}
+ 
+/*
+a single item. must be floated in horizontal scrolling.  typically,
+this element is the one that *you* will style the most.
+*/
+.items div {
+  float:left;
+ /* padding: 0 10px 0 0 ;*/
+}
+
+/* position and dimensions of the navigator */
+.navi {
+    margin-left:200px;
+    width:600px;
+    height:20px;
+}
+ 
+/* items inside navigator */
+.navi a {
+    width:8px;
+    height:8px;
+    float:left;
+    margin:3px;
+    background:url(images/navigator.png) 0 0 no-repeat;
+    display:block;
+    font-size:1px;
+} 
+/* mouseover state */
+.navi a:hover {
+    background-position:0 -8px;
+}
+ 
+/* active state (current page state) */
+.navi a.active {
+    background-position:0 -16px;
+}
+
+
+
+/*email form start*/
+#email_form {
+ 
+    /* must be initially hidden */
+    display:none;
+    /* place overlay on top of other elements */
+    z-index:10000;
+    
+    /* CSS3 styling for latest browsers */
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;
+    border-radius: 3px 3px 5px 5px;
+    box-shadow: 2px 3px 10px #444444;
+    
+    background-color: #FFFFFF;
+    margin: 2px;
+    overflow: hidden;
+    padding-top: 5px;
+    position: relative;
+    color: #666666;
+    font-family: Helvetica,Tahoma,Arial,sans-serif;
+    font-size: 12px;
+    width: 460px;
+}
+ 
+/* close button positioned on upper right corner */
+#email_form .close {
+    background-image:url(images/close-email.png);
+    position:absolute;
+    right:-5px;
+    top:-5px;
+    cursor:pointer;
+    height:36px;
+    width:36px;
+}
+
+#outerContainer {
+    margin-top: -17px;
+}
+
+#outerContainer {
+    background-color: #FFFFFF;
+    margin: 2px;
+    overflow: hidden;
+    padding-top: 5px;
+    position: relative;
+}
+
+h2 {
+    color: #777777;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 5px 18px 10px;
+}
+
+#mainBody {
+    height: 274px;
+}
+
+#greyScreen {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 419px;
+    opacity: 0.95;
+    position: absolute;
+    top: 0;
+    width: 456px;
+    z-index: 999999;
+}
+.sts-dn {
+    display: none !important;
+}
+
+#shareDetails {
+    margin-bottom: 10px;
+    margin-top: 2px;
+    position: relative;
+    text-align: center;
+}
+
+#emailShareDetails #toField label {
+    bottom: 7px;
+    overflow-x: hidden;
+    position: relative;
+    right: 4px;
+    text-align: right;
+}
+#emailShareDetails label, #emailShareDetails span.recent_label {
+    color: #999999;
+    display: inline-block;
+    font-size: 1.3em;
+    width: 66px;
+    text-align: right;
+}
+
+#articleDetails {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    min-height: 100px;
+    padding: 0 5px;
+}
+
+.sts-fl {
+    float: left !important;
+}
+
+.imgLink {
+    border: 0.1px solid #F1F1F1;
+}
+
+.imgLink img {
+    height: 100px;
+    width: 100px;    
+}
+
+#articleDetails > div {
+    margin-right: 5px;
+    width: 71%;
+}
+.sts-oh {
+    overflow: hidden !important;
+}
+.sts-fr {
+    float: right !important;
+}
+
+#articleDetails h3#headline {
+    font-size: 1.15em;
+    margin: 2px 0;
+    max-height: 33px;
+    overflow: hidden;
+    padding-right: 20px;
+    text-overflow: ellipsis;
+}
+#articleDetails div#snippet {
+    color: #999999;
+    font-size: 1em;
+    line-height: 1.1em;
+    margin: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+textarea {
+    margin-left: 0;
+    overflow: auto;
+    resize: none;
+}
+
+textarea, input {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border: 2px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    color: #777777;
+    font-family: inherit;
+    font-size: 1.1em;
+    margin: 5px;
+    padding: 4px;
+    width: 65%;
+}
+
+#shareMessage{
+  width:80%;  
+}
+
+#serviceCTAs {
+  padding-top: 40px;
+  height: 50px;
+ }
+
+.sts-cb {
+    clear: both !important;
+}
+
+.ctaButton {
+    background: -moz-linear-gradient(center top , #3FAB41 14%, #33932B 34%, #307D31 100%) repeat scroll 0 0 transparent;
+    background-color: #33932B;
+    border-radius: 4px 4px 4px 4px;
+    bottom: 34px;
+    color: #FFFFFF;
+    display: inline-block;
+    float: right;
+    font-size: 1.6em;
+    letter-spacing: 0.02em;
+    margin-right: 20px;
+    margin-top: 0;
+    padding: 7px 3px 4px;
+    text-align: center;
+    width: 140px;
+}
+
+.sharedMsg {
+    color: #33932B;
+    font-size: 1.1em;
+    margin: 15px 20px;
+    min-height: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.sharederrorMsg {
+    color: #FF2222;
+    font-size: 1em;
+    font-size: 1.1em;
+    margin: 15px 20px;
+    min-height: 12px;
+    text-align: center;
+    position: relative;
+}
+
+#doneScreen{
+    
+}
+/*email form end*/
+
